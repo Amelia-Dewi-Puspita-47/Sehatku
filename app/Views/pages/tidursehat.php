@@ -1,0 +1,66 @@
+<?= $this->extend('layout/template'); ?>
+
+<?= $this->section('content'); ?>
+<main>
+    <h1>Tidur Sehat</h1>
+    <section>
+        <img src="gambar website\Tidur.jpg" alt="Gambar Tidur" width="600" height="300">
+        <h2>Tips untuk Tidur Lebih Baik</h2>
+        <p>1. Optimalkan Jadwal Tidur</p>
+        <p>Mengontrol jadwal tidur harian juga merupakan langkah penting untuk mendapatkan tidur yang lebih baik. Untuk itu kamu bisa menerapkan beberapa strategi berikut: </p>
+        <p>a. Tetapkan waktu bangun yang tetap dan pertahankan. Pasalnya, hampir tidak mungkin bagi tubuh untuk terbiasa dengan rutinitas tidur yang sehat jika kamu terus-menerus bangun pada waktu yang berbeda. </p>
+        <p>b. Tetapkan durasi waktu tidur dan sesuaikan dengan jadwal yang kamu miliki. Jika perlu berikan waktu ekstra sebelum tidur untuk melepas lelah dan bersiap untuk tidur.</p>
+        <p>c. Hindari tidur siang karena tidur siang yang terlalu lama atau terlalu larut bisa mengganggu jadwal tidur dan mempersulitmu untuk tidur saat malam. Waktu terbaik untuk tidur siang adalah segera setelah makan siang atau di sore hari selama 20 menit.</p>
+        <!-- <p>Sumber : https://www.halodoc.com/artikel/tips-untuk-mendapatkan-tidur-yang-berkualitas</p> -->
+    </section>
+    <section>
+        <img src="gambar website\Tidur2.jpg" alt="Gambar Tidur" width="600" height="300">
+        <h2>Mengatasi Imsomnia</h2>
+        <p>Beberapa tips mengatasi imsomnia:</p>
+        <p>1. Luangkan waktu untuk relaksasi</p>
+        <p>Anda bisa mencoba berbagai metode relaksasi sebelum tidur, misalnya dengan melakukan yoga atau pilates. Aktivitas tersebut dapat memberikan ketenangan dan kenyamanan, sehingga Anda pun akan mudah terlelap. Selain itu, beberapa aktivitas menenangkan, seperti membaca buku, mandi air hangat, dan mendengarkan musik dengan irama yang pelan juga dapat membuat Anda tidur lebih nyenyak.</p>
+        <p>2. Kurangi konsumsi minuman beralkohol dan berkafein</p>
+        <p>Untuk mengatasi insomnia, Anda juga perlu menghindari konsumsi minuman beralkohol, kopi, teh, dan minuman ringan yang mengandung kafein, terutama pada sore hari dan saat menjelang tidur. Berbagai jenis minuman tersebut dapat membuat Anda lebih terjaga, sehingga akan susah tidur di malam hari. Agar lebih sehat, Anda dapat menggantinya dengan susu atau air putih.</p>
+        <p>3. Ciptakan kamar tidur yang nyaman</p>
+        <p>Banyak orang merasa susah tidur karena bekerja, bermain game, atau melakukan berbagai aktivitas lain di kamar tidurnya. Padahal, kamar tidur idealnya hanya digunakan untuk tidur. Oleh karena itu, Anda perlu menerapkan sleep hygiene agar bisa lebih mudah tidur. Caranya adalah dengan menempatkan meja belajar, komputer, dan televisi di luar kamar tidur, serta mengatur suhu dan menyesuaikan pencahayaan agar kamar terasa nyaman untuk tidur. Pilihlah bantal yang tidak terlalu tinggi agar tidak menyebabkan leher kaku saat bangun tidur. Jika Anda sedang hamil atau mengalami sakit punggung, aturlah posisi tidur dengan menyamping sambil menempatkan bantal di antara kedua kaki atau di bawah lutut.</p>
+        <!-- <p>Sumber : https://www.alodokter.com/menyiasati-insomnia</p> -->
+    </section>
+    <section>
+        <h2 class="Tabel-tidur">Tabel Tidur Sehat</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usia</th>
+                    <th>Waktu Tidur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0-1 Bulan</td>
+                    <td>14-18 Jam Sehari</td>
+                </tr>
+                <tr>
+                    <td>1-18 Bulan</td>
+                    <td>12-14 Jam Sehari</td>
+                </tr>
+                <tr>
+                    <td>3-6 Tahun</td>
+                    <td>11-13 Jam Sehari</td>
+                </tr>
+                <tr>
+                    <td>6-12 Tahun</td>
+                    <td>10 Jam Sehari</td>
+                </tr>
+                <tr>
+                    <td>12-18 Tahun</td>
+                    <td>8-9 Jam Sehari</td>
+                </tr>
+                <tr>
+                    <td>18-40 Tahun</td>
+                    <td>7-8 Jam Sehari</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+<?= $this->endSection(); ?>
