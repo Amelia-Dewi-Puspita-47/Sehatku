@@ -7,84 +7,42 @@ class Pages extends BaseController
     public function index() 
     {
         $data = [
-            'title' => 'Home | SehatKu'
+            'title' => 'Beranda | SehatKu'
         ];
-        // echo view('layout/header', $data);
-        // echo view('pages/home');
-        // echo view('layout/footer');
 
         return view('pages/home', $data);
     }
 
-    public function about()
+    public function artikel()
     {
         $data = [
-            'title' => 'About | SehatKu'
+            'title' => 'Artikel | SehatKu'
         ];
-        return view('pages/about', $data);
+        return view('pages/artikel', $data);
     }
 
-    public function contact()
+    public function tips()
     {
         $data = [
-            'title' => 'Contact |SehatKu'
+            'title' => 'Tips Sehat | SehatKu'
         ];
-        return view('pages/contact', $data);
+        return view('pages/tips', $data);
     }
 
-    public function gayahidup()
+    public function resep()
     {
         $data = [
-            'title' => 'Gaya Hidup | SehatKu'
+            'title' => 'Resep Sehat |SehatKu'
         ];
-        return view('pages/gayahidup', $data);
+        return view('pages/resep', $data);
     }
 
-    public function diet()
+    public function tentang()
     {
         $data = [
-            'title' => 'Diet | SehatKu'
+            'title' => 'Tentang Kami | SehatKu'
         ];
-        return view('pages/diet', $data);
+        return view('pages/tentang', $data);
     }
 
-    public function olahraga()
-    {
-        $data = [
-            'title' => 'Olahraga | SehatKu'
-        ];
-        return view('pages/olahraga', $data);
-    }
-
-    public function tidursehat()
-    {
-        $data = [
-            'title' => 'Tidur Sehat | SehatKu'
-        ];
-        return view('pages/tidursehat', $data);
-    }
-
-    public function stres()
-    {
-        $data = [
-            'title' => 'Manajemen Stres | SehatKu'
-        ];
-        return view('pages/stres', $data);
-    }
-
-    public function hidrasi()
-    {
-        $data = [
-            'title' => 'Hidrasi | SehatKu'
-        ];
-        return view('pages/hidrasi', $data);
-    }
-
-    public function makanansehat()
-    {
-        $data = [
-            'title' => 'Makanan Sehat | SehatKu'
-        ];
-        return view('pages/makanansehat', $data);
-    }
 }

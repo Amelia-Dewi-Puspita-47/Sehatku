@@ -1,0 +1,1045 @@
+/* Global Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ECD4D4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styling */
+.navbar .logo img {
+    width: 100px; /* Sesuaikan ukuran logo */
+}
+
+/* Menu Styling */
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Mengurangi jarak antar link */
+}
+
+.menu a {
+    color: #333;
+    text-align: center;
+    padding: 10px 15px; /* Mengurangi padding agar lebih compact */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #ff6b6b;
+}
+
+/* Search Box Styling */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 50px;
+    padding: 5px 10px;
+    max-width: 180px; /* Mengurangi ukuran maksimal */
+}
+
+.search-container input[type="text"] {
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 16px;
+    width: 100%;
+}
+
+.search-container .search-icon {
+    color: #333;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+
+/* Hero Section with Transparent Overlay */
+.hero {
+    position: relative;
+    overflow: hidden;
+    height: 500px;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%; /* Menggunakan 100% untuk fleksibilitas */
+    height: 500px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparansi overlay hitam */
+    z-index: 1;
+}
+
+.hero .slider-wrapper {
+    display: flex;
+    width: 500px; /* Menggunakan 100% untuk fleksibilitas */
+    height: 500px;
+    transition: transform 1s ease; /* Transisi yang halus saat berganti gambar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.hero .slider-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .hero {
+    background-image: url('../assets/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 20px;
+    text-align: center;
+    color: white;
+    max-height: 600px;
+    position: relative;
+} */
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-buttons .btn {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 30px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cta-buttons .btn.secondary {
+    background-color: transparent;
+    border: 2px solid #ff6b6b;
+    color: #ff6b6b;
+}
+
+/* Latest Articles Section */
+.container2 {
+    /* width: 100%; */
+    margin-top: 50px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container2 h1 {
+    margin-bottom: 20px;
+    font-size: 25px;
+    color: #525252;
+}
+.categories h2,
+.testimonials h2 {
+    padding-top: 50PX;
+    margin-bottom: 50px;
+    font-size: 25px;
+    color: #525252;
+}
+
+.container2 p {
+    text-align: center; /* Penataan teks rata tengah */
+    font-size: 15px;
+    color: #525252;
+    margin-top: 0;
+    margin-bottom: 30PX;
+}
+
+.artikel-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.photo-card {
+    width: 30%; 
+    height: auto; 
+    margin: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    background-color: transparent; 
+}
+
+.photo-card img {
+    margin: 10px;
+    width: 350px;
+    height: 200px; 
+    object-fit: cover;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.info {
+    padding: 10px;
+    margin-top: 0;
+}
+
+.info h2 {
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #525252;
+}
+
+.info hr {
+    margin-top: 0;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+.info p {
+    font-size: 12px; 
+    line-height: 1.5; 
+    text-align: justify; 
+}
+
+.buttons {
+    display: flex; 
+    margin-top: 10px; 
+}
+
+.btn-detail {
+    margin-left: 1%; 
+}
+
+.btn-detail button {
+    padding: 5px 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    cursor: pointer; 
+    font-size: 11px; 
+    background-color: transparent; 
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s ease; 
+}
+
+.btn-detail button:hover {
+    background-color: #ECD4D4; 
+    color: white; 
+}
+
+.btn-selengkapnya button {
+    color: #ff6b6b; 
+    border: 2px solid #ff6b6b; 
+    background-color: transparent; 
+    border-radius: 8px; 
+    padding: 5px 5px; 
+    cursor: pointer; 
+    transition: color 0.3s ease; 
+}
+
+.btn-selengkapnya button:hover {
+    color: #ffffff; 
+    border: 2px solid #ffff; 
+    background-color: #ff6b6b; 
+}
+
+
+/* .latest-articles {
+    margin-top: 10px;
+    padding: 50px 20px;
+    text-align: center;
+} */
+
+/* 
+.article-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.article {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.article img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.latest-articles a {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    text-decoration: none;
+    color: #525252;
+    font-style:italic;
+    border: 1px solid #525252;
+    max-width: 1200px;
+    margin: 20px auto;
+} */
+
+/* Categories Section */
+.categories {
+    padding: 70px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.categories h2 {
+    
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grid responsif */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.category {
+    background-color: #ECD4D4;
+    color: #525252;
+    font-size: 14px;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.category i {
+    font-size: 48px;
+    margin-bottom: 15px;
+    color: #ff6b6b;
+}
+
+/* Testimonial Section */
+.testimonials {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+
+}
+
+.testimonial {
+    max-width: 350px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Footer Section */
+footer {
+    padding: 30px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.footer-links {
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-icons i {
+    font-size: 24px;
+    color: white;
+    margin: 0 10px;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+
+/* ============================= CSS FOR ARTIKEL.PHP =======================================*/
+.blog {
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+
+.row-artikel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.search-bar {
+    margin: 10px 0;
+    padding-bottom: 30px;
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+}
+
+.search-bar button {
+    padding: 10px 15px;
+}
+
+.filter-category {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.blog-card {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 15px;
+    box-shadow: 20px 15px 50px rgba(0, 0, 0, 0.1);
+}
+
+.img-blog {
+    width: 30%;
+    overflow: hidden;
+}
+
+.img-blog img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content-blog {
+    padding: 20px;
+    width: 50%;
+}
+
+.content-blog h2 {
+    margin-top: 0;
+    color: #414141;
+}
+
+.content-blog p {
+    margin-top: 5%;
+    font-size: 14px;
+    padding: 0;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 6px 16px;
+    background-color: #ff6b6b;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s;
+    box-shadow: 20px 15px 50px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ff6b6b;
+}
+
+.read-more:hover {
+    background-color: #ffff;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+/* ========================================= */
+
+
+/* ============================ CSS FOR DETAIL ARTIKEL ==================================== */
+/* Styling untuk Halaman Detail Artikel */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px auto;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+/* Bagian Kiri Artikel */
+.blog-left {
+    width: 60%;
+}
+
+.namaBlog h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.namaBlog p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.pic-wisata img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.content-detailblog p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #414141;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.content-detailblog h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.content-detailblog ul {
+    list-style: disc inside;
+    margin-bottom: 20px;
+}
+
+.content-detailblog li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Bagikan di Media Sosial */
+.share-buttons {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.share-buttons a {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 10px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.share-buttons a:hover {
+    background-color: #333;
+}
+
+/* Bagian Artikel Terkait */
+.blog-right {
+    /*width: 28%;
+    padding-left: 20px;
+    */width: 300px;
+    max-height: 800px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 18px;
+    margin-top: 5%;
+    border-radius: 10px;
+    border: 1px solid #ECD4D4;
+}
+
+.blog-right h3 {
+    /* font-size: 22px; */
+    margin-bottom: 20px;
+    color: #bf9f9f;
+    margin-left: 30%;
+}
+
+.related-articles {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.related-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* text-align: center; */
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: inherit;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.related-article img {
+    width: 100%;
+    height: auto;
+    /* border-radius: 10px; */
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.related-article h4 {
+    font-size: 15px;
+    color: #414141;
+}
+
+.related-article:hover {
+    transform: scale(1.02);
+}
+
+/* ================================================ */
+
+
+/* ===================================CSS FOR TIPS KAMI===================================== */
+.tips {
+    padding: 20px 0;
+    background-color: #f9f9f9;
+}
+
+.tips .container-tips {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.tips h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #414141;
+    margin-bottom: 20px;
+}
+
+.tips p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.tip-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.tip-card:hover {
+    transform: translateY(-5px);
+}
+
+.tip-card i {
+    font-size: 40px;
+    color: #ff6b6b;
+    margin-bottom: 10px;
+}
+
+.tip-card h3 {
+    font-size: 20px;
+    color: #414141;
+    margin-bottom: 10px;
+}
+
+.tip-card p {
+    color: #666;
+}
+
+.subscribe {
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.subscribe h2 {
+    font-size: 24px;
+    color: #414141;
+}
+
+.subscribe p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.subscribe form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.subscribe input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.subscribe button {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe button:hover {
+    background-color: white;
+    color: #ff6b6b;
+    border: 1px solid #ff6b6b;
+}
+
+/* ===================================CSS FOR TIPS KAMI===================================== */
+
+
+/* =======================CSS FOR RESEP SEHAT ============================= */
+/* Recipes Section Styling */
+.recipes-section {
+    padding: 18px 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.recipes-section h1 {
+    font-size: 30px;
+    color: #525252;
+    margin-bottom: 30px;
+}
+
+/* Filter by Diet Type */
+.filter-diet {
+    margin-bottom: 30px;
+}
+
+.filter-diet select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+}
+
+/* Recipe List */
+.recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.recipe-card {
+    width: 27%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.recipe-card p {
+    text-align:left;
+}
+
+.recipe-card:hover {
+    transform: scale(1.03);
+}
+
+.recipe-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.recipe-info {
+    padding: 10px 20px;
+}
+
+.recipe-info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #414141;
+}
+
+.recipe-info p {
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 10px;
+}
+
+.cta-section {
+    margin-top: 40px;
+    padding: 30px 20px;
+    background-color: #ff6b6b;
+    color: white;
+    border-radius: 10px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.cta-section .btn {
+    background-color: white;
+    color: #ff6b6b;
+    padding: 10px 15px;
+    font-size: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-section .btn:hover {
+    border: 1px solid white;
+    background-color: #ff6b6b;
+    color: white;
+}
+/* ====================================CSS RESEP SEHAT END==================================== */
+
+
+/* ===================================CSS FOR TENTANG KAMI===================================== */
+/* About Us Section */
+.about-us-section {
+    padding: 20px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.about-header {
+    margin-bottom: 40px;
+}
+
+.about-header h1 {
+    font-size: 32px;
+    color: #525252;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+
+.about-header img {
+    width: 300px;
+    height: auto;
+}
+
+.about-image {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Visi dan Misi */
+.mission-vision {
+    margin: 50px 0;
+}
+
+.mission-vision h2 {
+    font-size: 28px;
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.mission-vision p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #414141;
+    margin-bottom: 20px;
+}
+
+/* Team Section */
+.team-section {
+    margin-top: 50px;
+}
+
+.team-section h2 {
+    font-size: 28px;
+    color: #525252;
+    margin-bottom: 30px;
+    margin-top: 100px;
+}
+
+.team-members {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.team-member {
+    width: 15%;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.team-member h3 {
+    font-size: 15px;
+    margin-top: 15px;
+    color: #414141;
+}
+
+.team-member p {
+    font-size: 14px;
+    color: #757575;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top:80px;
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    color: #525252;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #414141;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #414141;
+    width: 100%;
+}
+
+.contact-form button {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #e55b5b;
+}
+/* ===================================CSS TENTANG KAMI END===================================== */
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .search-container {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu a {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+}
